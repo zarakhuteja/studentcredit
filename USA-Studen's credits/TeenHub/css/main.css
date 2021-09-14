@@ -1,0 +1,315 @@
+/***********************
+General
+***********************/
+
+  #wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 5%;
+  }
+  
+  /*** Images ***/
+    .pic {
+     width: 100%;
+    }
+  
+    .pic-mobile {
+      min-width: 128px;
+      max-width: 128px;
+    }
+  
+    img {
+      max-width: 100%;
+    }
+     /*home page*/
+      @media screen and (max-width: 480px) {
+        #cal-wide {
+          display: none;
+        }
+      }
+      
+      #cal-wide,
+      #cal-mobile {
+        min-width: 100%;
+        margin-top: -2em;
+        border-bottom: 5px solid #008ba1;
+      }
+  
+     #logo {
+        min-width: 200px;
+        align-self: center;
+        position: relative; 
+        top: 0.5em;
+        margin: 0;
+     }
+  
+  /*** Text ***/
+    h1, h2, .h2font, .answer {
+      font-size: 1.75em;
+      font-weight: normal;
+    }
+    
+    h1, .events, .question {
+      font-family: 'Orbitron', sans-serif;
+    }
+    
+    h2, .h2font, .answer {
+      font-family: 'Exo', sans-serif;
+    }
+  
+    .events, .question {
+      font-size: 2.25em;
+      font-weight: normal;
+    }
+  
+    .answer {
+      padding-bottom: 0em;  
+    }
+
+    .hiddentitle {
+      margin-left: -999999px;
+      margin-top: -1.55em;
+    }
+
+/***********************
+Header
+***********************/
+  
+  header {
+    clear: both;
+    margin: -7em 0 2em 0;
+    padding: -2em 0 0 0;
+    width: 100%;
+    border-bottom: 5px solid #008ba1;
+  }
+
+
+  /*** Nav ***/
+  
+   nav { 
+    text-align: center;
+    padding: 10px 0;
+    margin: 7em 0 0;
+    min-height: 13em;
+    background-color: #939292;
+  }
+  
+  #jnav {
+    min-height: 14.5em;
+  }
+
+  nav ul {
+    list-style: none;
+  }
+
+ /*Secondary Nav*/
+    #subnav {
+      text-align: center;
+      background-color: #fff;
+      margin: 0;
+      padding: 0;
+      min-width: 100%;
+      clear: both;
+    }
+    
+    #subnav a {
+      color: #939292;
+    }
+    
+    #subnav li {
+      display: inline-block;
+      padding: 0 2em;
+    }
+
+
+/***********************
+Home Page
+***********************/
+
+  /*home page*/
+    @media screen and (max-width: 480px) {
+      #find, #logo {
+        text-align: center;
+        max-width: 20em;
+      }
+  
+      #find {
+        margin-left: -2em;
+      }
+    } 
+
+    .question, .events {
+      background-color: #dbdbdb;
+      clear: both;
+      padding: 10px 0 10px 0;
+      text-align: center;
+      margin-bottom: 0.5em;
+    }
+
+  /*content page*/
+    ul li {
+      list-style: none;
+    }
+
+    #primary {
+      margin-left: 2em;
+    }
+
+ /*** Upcoming Events ***/
+
+  .gallery {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .gallery li {
+    float: left;
+    width: 45%;
+    margin: 2.5%;
+    background-color: #008ba1;
+    color: #fff;
+  }
+  
+  .gallery li a p {
+    margin: 0;
+    padding: 5%;
+    font-size: 0.75em;
+    color: #ff3500;
+  }
+
+  .gallery .caption {
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    font-size: 1.75em;
+    font-weight: normal;
+    font-family: 'Exo', sans-serif;
+  }
+
+/***********************
+Links
+***********************/
+
+  a:link {
+    text-decoration: none;
+  }
+
+
+  .link {
+    color: #088ba1;
+    text-decoration: underline;
+  }
+
+/***********************
+Table
+***********************/
+
+  *, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: 'Exo', sans-serif;
+    margin: 0;
+  }
+  
+  table {
+    max-width: 100%;
+    margin: 10px auto;  
+    border-collapse: collapse;
+  }
+  
+  caption p {
+    padding: 20px 0 10px 0; 
+    background: #dbdbdb;
+    color: #088ba1;
+  }
+  
+  thead th {
+    color: #ff3500;
+    font-family: 'Orbitron', sans-serif;
+    border-bottom: 3px solid #939292;
+  }
+
+  tr {
+    border-bottom: 1px solid #939292;
+    margin-bottom: 5px;
+    color: #088ba1;
+  }
+
+  tr:last-child {
+    border-bottom: 3px solid #939292;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 20px;
+    font-weight: 300;
+  }
+  
+  .tbodyth {
+    color: #088ba1;
+    font-family: 'Exo', sans-serif;
+    margin: 0 ;
+    padding: 10px 0;
+  }
+
+/*** Mobile Table ***/
+  @media screen and (max-width: 485px) {
+    .hidden {
+      display: none;
+    }
+    
+    tr th {
+      margin: 1em;
+    }
+  }
+  
+ @media screen and (max-width: 840px) {
+    .pic-mobile {
+      display: none;
+    }
+  
+    tr th {
+      margin: 2em;
+      padding: 5px;
+    }
+  }
+
+/***********************
+Footer
+***********************/
+
+  footer {
+    font-family: 'Exo', sans-serif;
+    font-size: 1em;
+    padding-top: 50px;
+    width: 100%;
+    clear: both;
+    margin: 0 0 0 0;
+    text-align: center;
+  }
+  
+  #footer, .quick {
+    background-color : #939292;
+    color: #fff;
+  }
+  
+  #footer {
+    border-top: 5px solid #088ba1;;
+    padding-bottom: 0.5em;
+  }
+  
+  .social-icon { 
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+  }
+
+
+
+
